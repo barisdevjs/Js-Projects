@@ -1,0 +1,74 @@
+*, *::before, *::after {
+box-sizing: border-box;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-weight: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #14131479;
+}
+
+.calculator-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4,6vw);
+    grid-template-rows: minmax(13vh, auto) repeat(4,8vh);
+}
+
+.calculator-grid > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: .2vmin solid ghostwhite;
+    outline: none;
+    background-color: rgba(255,255,255, .6);
+}
+
+.calculator-grid > button:hover {
+    background-color: rgba(240, 236, 12, 0.8);
+    border:.1vmin dashed black
+} 
+
+button:first-of-type:hover {
+    background-color: rgb(185, 16, 53);
+}
+
+button:last-of-type:hover {
+    background-color: rgb(16, 185, 16);
+    cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/happy.png"), auto;
+    
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+.output {
+    grid-column: 1 / -1;
+    background-color: skyblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: .2vmin;
+    font-size: 2.5rem;
+    word-wrap: break-word;
+    word-break: break-all;
+    position: relative;
+    font-family:'Orbitron';
+}
+
+.output .previous-operand {
+    color:rgba(61, 53, 53, 0.7);
+    font-size: 1.5rem;
+}
+
+.output .current-operand {
+    color:rgb(12, 3, 3);
+    font-size: 2.0rem;
+    padding-right: 3vmin;
+}
+
