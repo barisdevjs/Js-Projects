@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:rgb(228, 78, 78);
+    --font-fam : Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--font-fam);
+}
+
+header {
+    background-color:white;
+    padding: 30px;
+}
+
+header > h1 {
+    color: #24272E;
+    text-align: center;
+    font-family: var(--font-fam);
+}
+
+img {
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+}
+
+img:hover {
+    transform:scale(1.1);
+    background:white;
+}
+
+.choices :first-of-type img:hover {
+    transform: rotateZ(90deg) scale(1.1);    
+}
+
+
+.choices :nth-of-type(3) img:hover {
+    transform: rotateZ(-145deg) scale(1.1);
+}
+
+.score-board {
+    margin:20px auto;
+    border:3px solid white;
+    border-radius: 4px;
+    text-align: center;
+    width: 200px;
+    color: aliceblue;
+    font-size: 45px;
+    padding: 15px 20px;
+    position: relative;
+}
+
+.badge {
+    background:rgb(90, 6, 27);
+    color: white;
+    font-size: 14px;
+    padding: 2px 10px;
+    border-radius:5px;
+    writing-mode: sideways-rl;
+}
+
+#user-label {
+    position: absolute;
+    top:30px;
+    left:-55px;
+}
+
+#computer-label {
+    position: absolute;
+    top:30px;
+    right:-93px;
+}
+
+.result {
+    font-size: 40px;
+    color: white;
+}
+
+.result > p {
+    text-align: center;
+    font-weight: 500;
+}
+
+.choices {
+    margin: 50px 0 0 0;
+    text-align: center;
+}
+
+.choice {
+    border: 2px solid white;
+    border-radius: 50%;
+    margin: 0 20px;
+    padding: 0;
+    display: inline-block;
+    transition: all .5 ease;
+    background:rgb(228, 78, 78);
+}
+
+.choice:hover {
+    cursor: pointer;
+}
+
+#action-message {
+    text-align:center;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    margin:40px 0 0 0 ;
+}
