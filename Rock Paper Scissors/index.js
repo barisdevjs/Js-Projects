@@ -15,7 +15,9 @@ function getComputerChoice() {
 }
 
 const convertToWord = (letter) => {
-    return letter === 'r' ? 'Rock' : 'p' ? 'Paper' : 'Scissors'
+    if( letter === 'r' ) return 'Rock'
+    if( letter === 'p' ) return 'Paper'
+    return 'Scissors'
 }
 
  const win = (userChoice, computerChoice) => {
