@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color:rgb(228, 78, 78);
+    background-color:rgb(206, 117, 117);
     --font-fam : Verdana, Geneva, Tahoma, sans-serif;
     font-family: var(--font-fam);
 }
@@ -116,18 +116,18 @@ img:hover{
 
 .green {
   
-    border:10px solid green;
+    box-shadow: 0 0 40px green;
 
 }
 
 .red {
     
-    border:10px solid red;
+    box-shadow: 0 0 40px red;
 }
 
 
 .gray {
-    border:10px solid gray; 
+    box-shadow: 0 0 40px gray; 
 }
 
 
