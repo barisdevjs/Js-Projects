@@ -21,24 +21,24 @@ header > h1 {
     font-family: var(--font-fam);
 }
 
+
 img {
     width:150px;
     height:150px;
     border-radius: 50%;
 }
 
-img:hover {
-    transform:scale(1.1);
+img:hover{
     background:white;
 }
 
 .choices :first-of-type img:hover {
-    transform: rotateZ(90deg) scale(1.1);    
+    transform: rotateZ(90deg);    
 }
 
 
 .choices :nth-of-type(3) img:hover {
-    transform: rotateZ(-145deg) scale(1.1);
+    transform: rotateZ(-145deg);
 }
 
 .score-board {
@@ -110,3 +110,25 @@ img:hover {
     font-size: 20px;
     margin:40px 0 0 0 ;
 }
+
+
+/* These classes will be added by javascript*/
+
+.green {
+  
+    border:10px solid green;
+
+}
+
+.red {
+    
+    border:10px solid red;
+}
+
+
+.gray {
+    border:10px solid gray; 
+}
+
+
+/*----------------END of These Classes______________*/
