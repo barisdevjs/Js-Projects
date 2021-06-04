@@ -20,8 +20,8 @@ const convertToWord = (letter) => {
     return 'Scissors'
 }
 
- const win = (userChoice, computerChoice) => {
-    const userChoice_div = document.getElementById(userChoice)
+const win = (userChoice, computerChoice) => {
+    const userChoice_div = document.getElementById(userChoice)  // You are selecting a div which is also selected in main() ***
     userScore++;
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
@@ -29,7 +29,7 @@ const convertToWord = (letter) => {
     userChoice_div.classList.add('green');
     setTimeout(() => userChoice_div.classList.remove('green'), 300)
 }
- 
+
 const lose = (userChoice, computerChoice) => {
     const userChoice_div = document.getElementById(userChoice)
     computerScore++
@@ -44,7 +44,7 @@ const draw = (userChoice, computerChoice) => {
     const userChoice_div = document.getElementById(userChoice)
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
-    result_p.innerHTML ='DRAW';
+    result_p.innerHTML = convertToWord(userChoice).sub() + '  =  '.sub() + convertToWord(computerChoice).sub() + '   ====>   DRAW' ;
     userChoice_div.classList.add('gray');
     setTimeout(() => userChoice_div.classList.remove('gray'), 300)
 }
@@ -69,16 +69,16 @@ function game(userChoice) {
         case 'ss':
         draw(userChoice, computerChoice);
         break;
-        }
+    }
 }
 
 
 function main() {
-rock_div.addEventListener('click', () => game('r'))
-
-paper_div.addEventListener('click', () => game('p'))
-
-scissors_div.addEventListener('click', () => game('s'))
+    rock_div.addEventListener('click', () => game('r'))
+    
+    paper_div.addEventListener('click', () => game('p'))
+    
+    scissors_div.addEventListener('click', () => game('s'))
 }
 
 main()
