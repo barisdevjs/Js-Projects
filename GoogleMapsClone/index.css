@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+}
+
+#map {
+    width:100vw;
+    height: 100vh;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    position:relative;
+}
+
+#fit {
+        display: block;
+        position: absolute;
+        top: 18%;
+        left:1%;
+        width: 10%;
+        height: 12%;
+        padding: 10px;
+        border: none;
+        border-radius: 3px;
+        font-size: 22px;
+        text-align: center;
+        color: #fff;
+        background: red;
+        }
+
+  
