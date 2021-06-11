@@ -40,8 +40,50 @@ document.getElementById('fit').addEventListener('click', function () {
     [32.837716, 39.925039], // southwestern corner of the bounds
     [32.836120, 39.925039] // northeastern corner of the bounds
     ]),
-    setTimeout(() => window.open('https://www.anitkabir.tsk.tr/index.html'), 9000) 
+    setTimeout(() => window.open('https://www.anitkabir.tsk.tr/index.html'), 20000) 
     // This is the page will be opened after the button clicked  
 });
-}
 
+
+map.on('load', function () {
+    // Load an image from an external URL.
+    map.loadImage(
+    'https://upload.wikimedia.org/wikipedia/commons/a/a8/Ataturk1930s.jpg',
+    function (error, image) {
+    if (error) throw error;
+     
+    // Add the image to the map style.
+    map.addImage('ata', image);
+     
+    // Add a data source containing one point feature.
+    map.addSource('point', {
+    'type': 'geojson',
+    'data': {
+    'type': 'FeatureCollection',
+    'features': [
+    {
+    'type': 'Feature',
+    'geometry': {
+    'type': 'Point',
+    'coordinates': [32.8371,39.925040] // image coordinates on map
+    }
+    }
+    ]
+    }
+    });
+     
+    // Add a layer to use the image to represent the data.
+    map.addLayer({
+    'id': 'points',
+    'type': 'symbol',
+    'source': 'point', // reference the data source
+    'layout': {
+    'icon-image': 'ata', // reference the image
+    'icon-size': 0.18
+    }
+    });
+    }
+    );
+    });
+
+}
