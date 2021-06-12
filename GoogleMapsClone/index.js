@@ -1,5 +1,5 @@
 mapboxgl.accessToken = 'pk.eyJ1Ijoid2Vyd2VyMTciLCJhIjoiY2twbXZoZWNuMDYzaTJubnUyd2NmOXJidCJ9.thPscesMANS5mHnYfA6aAw';
-// it is our key in the mapbox website
+// it is our key in the mapbox website it is unique for us
 
 navigator.geolocation.getCurrentPosition(successLocation, errorLocation, {
     enableHighAccuracy: true // third one is optional
@@ -12,7 +12,7 @@ function successLocation(position) {
 
 function errorLocation() {
 setupMap([ 27.532683372024152 , 41.019545547100876]) // TEKİRDAĞ We have to first write longitude then latitude otherwise 
-// we will get falsy values,  
+// we will get falsy values
 }
 
 function setupMap(center) {
@@ -23,9 +23,9 @@ function setupMap(center) {
         zoom:10 /* it is the first opening scale of map
         if you set it to 1 you will see whole earth map */ 
     });
-
-    const nav = new mapboxgl.NavigationControl();
-    map.addControl(nav, 'top-left')
+ 
+    const nav = new mapboxgl.NavigationControl(); // This is a   +/-    menu 
+    map.addControl(nav, 'top-left') // bye default it is at he top right
 
     const directions = new MapboxDirections({
         accessToken: mapboxgl.accessToken,
