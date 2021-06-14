@@ -31,7 +31,7 @@ function setupMap(center) {
         accessToken: mapboxgl.accessToken,
         unit: 'metric'
       });  
-      map.addControl(directions, 'top-right');
+      map.addControl(directions, 'top-right'); 
 
 
 
