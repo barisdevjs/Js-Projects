@@ -40,7 +40,7 @@ document.getElementById('fit').addEventListener('click', function () {
     [32.837716, 39.925039], // southwestern corner of the bounds
     [32.836120, 39.925039] // northeastern corner of the bounds
     ]),
-    setTimeout(() => window.open('https://www.anitkabir.tsk.tr/index.html'), 20000) 
+    setTimeout(() => window.open('https://www.anitkabir.tsk.tr/index.html'), 12000) 
     // This is the page will be opened after the button clicked  
 });
 
