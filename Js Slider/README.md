@@ -4,5 +4,5 @@
 - It has a white&&black option and a colorful version of an image.
 - In fact the file is the same file and we use some editors to make an black&&white copy of a selected image.
 - ---
-- [Inspired From](https://www.youtube.com/watch?v=ee8y1IV6pOI&t=15s)
+- [Inspired From ==> THIS](https://www.youtube.com/watch?v=ee8y1IV6pOI&t=15s)
 
