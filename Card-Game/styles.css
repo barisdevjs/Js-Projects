@@ -13,7 +13,7 @@ body {
     padding-top: 1rem; 
 }
 
-.deck, .text {
+.deck, .text,.card {
     display: flex;
     justify-content:center;
     align-items: center;
@@ -40,4 +40,38 @@ body {
 
 .player-deck {
     background-color:blue;
+}
+
+.card {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border:1px solid black;
+    border-radius:.5rem;
+    font-size: 4rem;
+}
+
+.card::before, .card::after {
+position:absolute;
+content:attr(data-value);
+font-size:1rem;
+}
+
+.card::before{
+top:.5rem;
+left:.5rem;
+}
+
+.card::after{
+bottom:.5rem;
+right:.5rem;
+transform: rotate(180deg)
+}
+
+.card.red {
+    color: red;
+}
+
+.card.black {
+    color: black;
 }
