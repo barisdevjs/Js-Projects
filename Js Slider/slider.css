@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 30vw;
+    height: 80vh;
+    position: relative;
+}
+.container::before {
+    content:'Move left to see in black&&white ';
+    font-size: 2em;
+    position: absolute;
+    top:50%;
+    left:-50%;
+    width:15vw;
+
+}
+.container::after {
+    content:'Move right to see in COLORFUL ';
+    font-size: 2em;
+    color:red;
+    position: absolute;
+    top:50%;
+    right:-50%;
+    width:15vw;
+    
+}
+.colorimg,
+.blackimg {
+    position: absolute;
+    width: 30vw;
+    height: 80vh;
+}
+
+.colorimg {
+    width: 15vw;
+    overflow: hidden;
+}
+img {
+    width: 30vw;
+    height: 80vh;
+    object-fit: cover;
+}
+
+.slider {
+    width:.3rem;
+    background: cornsilk;
+    height: 100%;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+}
