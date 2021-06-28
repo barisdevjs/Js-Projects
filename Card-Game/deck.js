@@ -1,8 +1,9 @@
 const SUITS = ['♠','♥','♦','♣']
 const VALUES = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J','Q','K']
+// They are global value so all of the letters are Uppercase letters
 
 export default class Deck {
-    constructor(cards = freshDeck( )) {
+    constructor(cards = freshDeck()) {
         this.cards = cards
     }
 
@@ -47,7 +48,7 @@ class Card {
     }
 }
 /* 
-<div class="card red" data-value='♥9'>
+<div class="card red" data-value='9♥'>
 ♥
 </div>
  */

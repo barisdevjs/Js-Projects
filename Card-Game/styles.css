@@ -16,6 +16,9 @@ body {
     user-select:none;
     font-family: sans-serif;
     font-weight: bold;
+    background-image: url('image.jpg');
+    background-repeat:none;
+    background-size: cover;
 }
 
 body::before {
@@ -25,7 +28,7 @@ body::before {
     left:50%;
     transform:translate(-50%,-50%);
     font-size:2rem;
-    color:green;
+    color:red;
 }
 
 body::after {
@@ -51,10 +54,14 @@ body::after {
     font-style: 5rem;
     color: white;
     border-radius:.5rem;
+    font-size: 2.5rem;
 }
 
 .text {
     grid-column: span 2;
+    font-size: 4rem;
+    flex-direction: column;
+    position: relative;
 }
 
 .computer-deck {
@@ -72,6 +79,7 @@ body::after {
     border:1px solid black;
     border-radius:.5rem;
     font-size: 7rem;
+    background-color: white;
 }
 
 .card::before, .card::after {
@@ -99,3 +107,27 @@ transform: rotate(180deg)
     color: black;
 }
 
+.lost {
+    content:'😭';
+    font-size:4rem;
+}
+
+.win {
+    content:'😁';
+    font-size:4rem;
+}
+
+.draw {
+    content:'😑';
+    font-size:4rem;
+}
+
+.p {
+    position:absolute;
+    left: 150%;
+    color:black;
+    width: 200px;
+    height:20vh;
+    z-index:2;
+    border:5px solid black;
+}

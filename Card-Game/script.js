@@ -21,6 +21,8 @@ const playerCardSlot = document.querySelector('.player-card-slot')
 const computerDeckElement = document.querySelector('.computer-deck')
 const playerDeckElement = document.querySelector('.player-deck')
 const text = document.querySelector('.text')
+const text_Pelement = document.querySelector('.p')
+
 
 let computerDeck, playerDeck,inRound,stop;
 
@@ -72,14 +74,18 @@ function flipCards() {
 
     if (isRoundWinner(playerCard, computerCard)) {
         text.innerHTML ='WIN'
+        text.style.color = 'white'
         playerDeck.push(playerCard)
         playerDeck.push(computerCard)
     } else if (isRoundWinner(computerCard,playerCard)) {
         text.innerHTML = 'LOST!'
+        text.style.color = 'red'
+        text_Pelement.innerHTML = 'ffffffffffffffff'            /////////  To do
         computerDeck.push(playerCard)
         computerDeck.push(computerCard)
     } else {
         text.innerHTML = 'DRAW'
+        text.style.color = 'black'
         playerDeck.push(playerCard)
         computerDeck.push(computerCard)
     }
@@ -107,3 +113,4 @@ function isRoundWinner(cardOne, cardTwo) {
 function isGameOver(deck) {
     return deck.numberOfCards === 0
 }
+console.log(text_Pelement.innerHTML)
