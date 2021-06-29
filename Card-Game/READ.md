@@ -2,7 +2,7 @@
 ---
 ## Below you will see the page of a game
 
-![game page](url('readme file image.jpg')
+![alt text](https://github.com/barisdevjs/Card-Game/blob/main/readme file image.jpg?raw=true)
 
 ---
 
