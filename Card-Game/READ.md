@@ -2,7 +2,7 @@
 ---
 ## Below you will see the page of a game
 
-![Alt text](https://github.com/github/{repository}/blob/assets/readme file image.jpg) 
+![Screenshot](readme file image.png)
 
 ---
 
