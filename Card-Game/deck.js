@@ -43,7 +43,7 @@ class Card {
         const cardDiv = document.createElement('div')
         cardDiv.innerHTML = this.suit
         cardDiv.classList.add('card' , this.color)
-        cardDiv.dataset.value = `${this.value} ${this.suit}`
+        cardDiv.dataset.value = `${this.value}${this.suit}`
         return cardDiv
     }
 }
