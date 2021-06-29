@@ -2,7 +2,7 @@
 ---
 ## Below you will see the page of a game
 
-![Screenshot](readme file image.png)
+![Screenshot](readme file image.jpg)
 
 ---
 
