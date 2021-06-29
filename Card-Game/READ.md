@@ -2,7 +2,7 @@
 ---
 ## Below you will see the page of a game
 
-![alt text](Card-Game/readme file image.jpg)
+![Screenshot](readme file image.jpg)
 
 ---
 
