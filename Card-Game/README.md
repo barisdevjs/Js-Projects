@@ -2,7 +2,7 @@
 ---
 ## Below you will see the page of a game
 
-![Screenshot](readme file image.jpg)
+<img src="Js_Projects/Card-Game/readme file image.jpg" alt="screenshot"/>
 
 ---
 
