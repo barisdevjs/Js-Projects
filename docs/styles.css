@@ -1,0 +1,111 @@
+*, *::before, *::after {
+    box-sizing:border-box;
+}
+
+body {
+    margin: 0;
+    width:100vw;
+    height:100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 7rem);
+    grid-template-rows: 10rem 4rem 10rem;
+    gap:.5rem;
+    cursor: pointer;
+    justify-content: center;
+    padding-top: 15vmin; 
+    user-select:none;
+    font-family: sans-serif;
+    font-weight: bold;
+    background-image: url('image.jpg');
+    background-repeat:none;
+    background-size: cover;
+}
+
+body::before {
+    position: absolute;
+    content:'Computer';
+    top:3rem;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-size:2rem;
+    color:rgb(182, 211, 15);
+}
+
+body::after {
+    position: absolute;
+    content:'Player';
+    bottom:3rem;
+    font-size:2rem;
+    color:rgb(0, 183, 255);
+    left:50%;
+    transform:translate(-50%,50%)
+}
+
+.deck, .text,.card {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.deck {
+    height: 100%;
+    width: 100%;
+    border:2px solid black;
+    font-style: 5rem;
+    color: white;
+    border-radius:.5rem;
+    font-size: 2.5rem;
+}
+
+.text {
+    font-size: 3rem;
+    position: relative;
+    grid-column: span 2;
+}
+
+.computer-deck {
+    background-color:green;
+}
+
+.player-deck {
+    background-color:blue;
+}
+
+.card {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border:1px solid black;
+    border-radius:.5rem;
+    font-size: 7rem;
+    background-color: white;
+}
+
+.card::before, .card::after {
+position:absolute;
+content:attr(data-value);
+font-size:1.5rem;
+}
+
+.card::before{
+top:.5rem;
+left:.5rem;
+}
+
+.card::after{
+bottom:.5rem;
+right:.5rem;
+transform: rotate(180deg)
+}
+
+.card.red {
+    color: red;
+}
+
+.card.black {
+    color: black;
+}
+
+
+
+
