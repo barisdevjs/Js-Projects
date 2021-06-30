@@ -12,5 +12,5 @@
 - Good Luck
 ---
 
-1- This game logic is build by the help of constructor functions && classes
+### This game logic is build by the help of `constructor functions && classes`
  
