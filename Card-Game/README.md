@@ -2,7 +2,7 @@
 ---
 ## Below you will see the page of a game
 
-<img src="Js_Projects/Card-Game/readme file image.jpg" alt="screenshot"/>
+![alt text](https://github.com/barisdevjs/Js-Projects/blob/main/Card-Game/readme%20file%20image.jpg?raw=true)
 
 ---
 
