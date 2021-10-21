@@ -44,7 +44,7 @@ const draw = (userChoice, computerChoice) => {
     const userChoice_div = document.getElementById(userChoice)
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
-    result_p.innerHTML = convertToWord(userChoice).sub() + '  =  '.sub() + convertToWord(computerChoice).sub() + '   ====>   DRAW' ;
+    result_p.innerHTML = convertToWord(userChoice) + '  =  ' + convertToWord(computerChoice) + '     DRAW' ;
     userChoice_div.classList.add('gray');
     setTimeout(() => userChoice_div.classList.remove('gray'), 300)
 }
