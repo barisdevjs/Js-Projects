@@ -26,8 +26,11 @@ const win = (userChoice, computerChoice) => {
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
     result_p.innerHTML = convertToWord(userChoice) + ' beats ' + convertToWord(computerChoice) + ' You win!';
+    result_p.style.color = 'green' 
     userChoice_div.classList.add('green');
     setTimeout(() => userChoice_div.classList.remove('green'), 300)
+    setTimeout(() => result_p.style.color = 'white', 600)
+
 }
 
 const lose = (userChoice, computerChoice) => {
@@ -36,8 +39,10 @@ const lose = (userChoice, computerChoice) => {
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
     result_p.innerHTML = convertToWord(userChoice) + ' loses to ' + convertToWord(computerChoice) + ' You LOST!';
+    result_p.style.color = 'red' 
     userChoice_div.classList.add('red');
     setTimeout(() => userChoice_div.classList.remove('red'), 300)
+    setTimeout(() => result_p.style.color = 'white', 600)
 }
 
 const draw = (userChoice, computerChoice) => {
