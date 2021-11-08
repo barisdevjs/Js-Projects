@@ -1,6 +1,6 @@
 # This is a simple card game between AI and Human
 ---
-[Demo](https://barisdevjs.github.io/Js-Projects/)
+[ LIVE  Demo](https://barisdevjs.github.io/Js-Projects/)
 
 ## Below you will see the page of a game
 
