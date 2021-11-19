@@ -1,0 +1,101 @@
+body {
+    background-color:rgb(152, 189, 182)
+}
+.container {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:start;
+}
+.grid {
+    width: 210px;
+    height: 420px;
+    background-color: rgb(203, 218, 175);
+    display:flex;
+    flex-wrap: wrap;
+    box-shadow: -10px 6px 5px rgb(88, 80, 80);
+}
+
+.grid div {
+    width: 21px;
+    height: 21px;
+}
+
+.shape {
+    background-color: rgb(110, 53, 53);
+}
+
+.next {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(197, 192, 192);
+    display:flex;
+    flex-wrap: wrap;
+    margin-left: 50px;
+
+}
+
+.next div {
+    width: 23px;
+    height: 23px;
+    border:1px dotted black;
+}
+
+.nextSmall {
+    width: 21px;
+    height: 21px;
+    border: none;
+}
+
+#start-button {
+    margin-block:4vh;
+    outline: none;
+    width:30vmin;
+    height:7vmin;
+    border-radius: 5px;
+    font: 1em sans-serif;
+    background-color: rgb(83, 190, 21);
+}
+
+h2 {
+    text-align: center;
+    font: 2em sans-serif;
+    margin-bottom: 4vh;
+}
+
+h3{
+    text-align: center;
+    font: 1.5em sans-serif;
+    color: rgb(63, 3, 3);
+}
+
+.speed {
+        outline: none;
+        width:30vmin;
+        height:5vmin;
+        border-radius: 5px;
+        font: 1em sans-serif;
+}
+
+.plus {
+    background-color: rgb(133, 185, 102);
+}
+
+.minus {
+    background-color: rgb(145, 88, 88);
+}
+
+h6 {
+    background-color: rgb(228, 215, 222);
+    width: 15vmin;
+    height: 8vh;
+    color: rgb(63, 3, 3);
+    font: 1em sans-serif;
+    text-align: center;
+    border-radius:10px;
+}
+
+.spd {
+    font-size: 1.5em;
+    margin-top:5vh;
+}
