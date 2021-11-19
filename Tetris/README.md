@@ -4,15 +4,15 @@
 
 ## Below you will see the page of a game
 
-![alt text](https://github.com/barisdevjs/Js-Projects/blob/main/Card-Game/readme%20file%20image.jpg?raw=true)
+![alt text](https://github.com/barisdevjs/Js-Projects/blob/main/Tetris/tetris.jpg)
 
 ---
 
-- Whose value's are bigger than its opponent's wins the round
-- Game will be played when one side cards runs out of .
-- Click anywhere to start game on HTML page
+- You can start/stop the game with button
+- Game will be played until you lost
+- You can adjust the speed for your pleasure
 - Good Luck
 ---
 
-### This game logic is build by the help of `constructor functions && classes`
+### This game logic is build by the help of `functions && switch statement`
  
