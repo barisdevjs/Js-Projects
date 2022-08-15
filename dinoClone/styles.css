@@ -1,0 +1,66 @@
+* , *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.world {
+
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(195, 230, 127);
+}
+
+
+.score {
+    position: absolute;
+    top: 1vmin;
+    right: 1vmin;
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+.start-screen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5vmin;
+    background-color: rgb(230, 127, 191); 
+}
+
+.hide {
+    display: none;
+}
+
+.ground {
+    --left : 0;
+    position: absolute;
+    bottom: 0;
+    width: 300%;
+    left: calc(var(--left) * 1%);
+}
+
+.dino {
+    --bottom : 1;
+    position: absolute;
+    bottom: calc(var(--bottom) * 1%);
+    left: 5%;
+    height: 30%;
+}
+
+.cactus {
+    position: absolute;
+    left: calc(var(--left) * 1%);
+    bottom: 0;
+    height: 30%;  /* bunu js ile random yap */
+}
