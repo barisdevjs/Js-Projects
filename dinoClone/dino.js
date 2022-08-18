@@ -5,14 +5,18 @@ import {
 } from "./helpers.js";
 
 const dino = document.querySelector('[data-dino]');
-const JUMP_SPEED = .35
+const JUMP_SPEED = .45
 const GRAVITY = .0015
 const DINO_FRAME_COUNT = 2
 const FRAME_TIME = 100 // 10 per secs
 
+// audios
+
+const die = new Audio('assets/die.wav')
+const jump = new Audio('assets/jump.mp3')
+
 
 let isJumping, dinoFrameTime, currentFrameTime, yVelocity
-
 
 export function setupDino() {
     isJumping = false;
@@ -30,13 +34,13 @@ export function updateDino(delta, speedScale) {
     handleJump(delta)
 }
 
-
 export function getDinoRects() {
     return dino.getBoundingClientRect()
 }
 
 export function setDinoLose() {
     dino.src = `assets/dino-lose.png`
+    die.play()
 }
 
 function handleRun(delta, speedScale) {
@@ -56,7 +60,6 @@ function handleRun(delta, speedScale) {
 
 function handleJump(delta) {
     if (!isJumping) return
-
     incrementCustomProperty(dino, '--bottom', yVelocity * delta)
     if (getCustomProperty(dino, '--bottom') <= 0) {
         setCustomProperty(dino, '--bottom', 0)
@@ -70,4 +73,5 @@ function onJump(e) {
     if (e.code !== 'Space' || isJumping) return
     yVelocity = JUMP_SPEED
     isJumping = true
+    jump.play()
 }

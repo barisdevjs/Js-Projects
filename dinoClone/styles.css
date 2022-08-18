@@ -59,8 +59,9 @@ body {
 }
 
 .cactus {
+    --height : 1;
     position: absolute;
     left: calc(var(--left) * 1%);
     bottom: 0;
-    height: 30%;  /* bunu js ile random yap */
+    height: calc(var(--height) * 1%);  /* bunu js ile random yap */
 }

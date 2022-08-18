@@ -2,8 +2,10 @@ import { getCustomProperty, incrementCustomProperty, setCustomProperty} from './
 
 const SPEED = .05 // must be same with the ground speed
 const CACTUS_INTERVAL_MIN = 500 
-const CACTUS_INTERVAL_MAX = 2000
-const worldElement = document.querySelector('[data-world]') 
+const CACTUS_INTERVAL_MAX = 2500
+const worldElement = document.querySelector('[data-world]')
+const CACTUS_MIN_HEIGHT = 15
+const CACTUS_MAX_HEIGHT = 35 
 
 
 let nextCactusTime 
@@ -38,11 +40,13 @@ export function getCactusRects() {
 
 function createCactus() {
     const cactus = document.createElement('img')
+    const height = randomNumberBetween( CACTUS_MIN_HEIGHT, CACTUS_MAX_HEIGHT)
     cactus.dataset.cactus = true
     cactus.classList.add('cactus')
     cactus.src = 'assets/cactus.png'
     cactus.classList.add('cactus') 
     setCustomProperty( cactus, '--left',100)
+    setCustomProperty( cactus, '--height',height)
     worldElement.append( cactus) 
 }
 
@@ -50,4 +54,6 @@ function createCactus() {
 function randomNumberBetween( min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min)
 }
+
+
 
