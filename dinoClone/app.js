@@ -1,6 +1,7 @@
 import { setupGround, updateGround } from './ground.js';
 import { setupDino, updateDino, getDinoRects, setDinoLose } from './dino.js';
 import { setupCactus, updateCactus, getCactusRects } from './cactus.js';
+import { setupBird, updateBird, getBirdRects } from './bird.js';
 
 
 const WORLD_WIDTH = 100;
@@ -54,12 +55,12 @@ function checkLose() {
 
 function isCollision(rect1, rect2) {
     return (
-        rect1.left < rect2.right &&
-        rect1.top < rect2.bottom &&
-        rect1.right > rect2.left &&
-        rect1.bottom > rect2.top
-        )
-    }
+        rect1.left < rect2.right - 30 &&
+        rect1.right > rect2.left + 10 &&
+        rect1.top < rect2.bottom - 30 &&
+        rect1.bottom > rect2.top + 10
+    )
+}
     
     function updateSpeedScale(deltaTime) {
         speedScale += SPEED_SCALE_INCREASE * deltaTime;
