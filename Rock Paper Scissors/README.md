@@ -3,7 +3,7 @@
 
 ## Below you will see the page of a game
 
-![alt text](https://github.com/barisdevjs/Js-Projects/blob/main/music-controller/music.jpg)
+![alt text](https://github.com/barisdevjs/Js-Projects/blob/main/Rock%20Paper%20Scissors/rpc1.jpg)
 
 ---
 
