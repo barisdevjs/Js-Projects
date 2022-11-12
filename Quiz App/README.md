@@ -4,10 +4,10 @@
 
 ## Below you will see the page of a game
 
-![alt text](https://github.com/barisdevjs/Quiz-App/blob/main/screenshot1.jpg)
+![alt text](https://github.com/barisdevjs/Js-Projects/blob/main/Quiz%20App/screenshot1.jpg)
 
 ---
-![alt text](https://github.com/barisdevjs/Quiz-App/blob/main/screenshot2.jpg)
+![alt text](https://github.com/barisdevjs/Js-Projects/blob/main/Quiz%20App/screenshot2.jpg)
 
 ---
 
