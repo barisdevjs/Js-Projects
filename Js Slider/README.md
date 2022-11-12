@@ -6,3 +6,7 @@
 - ---
 - [Inspired From ==> THIS](https://www.youtube.com/watch?v=ee8y1IV6pOI&t=15s)
 
+![alt text](https://github.com/barisdevjs/Js-Projects/blob/main/Js%20Slider/black.jpg)
+
+![alt text](https://github.com/barisdevjs/Js-Projects/blob/main/Js%20Slider/colorful.jpg)
+
