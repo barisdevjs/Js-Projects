@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+    <title>Music Controller</title>
+</head>
+<body>
+    <canvas id="visualizer"></canvas>
+    <div class="grid">
+        <label for="volume">Volume</label>
+        <input type="range" id="volume" min="0" max="1" step="0.01" value="0.30">
+        <label for ="bass">Bass</label>
+        <input type="range" id="bass" min="-10" max="10"  value="2">
+        <label for ="treble">Treble</label>
+        <input type="range" id="treble" min="-10" max="10"  value="-2">
+    </div>
+</body>
+</html>

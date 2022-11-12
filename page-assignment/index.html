@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class='logo'>
+            <img src="assets/logo.png" alt="logo">
+        </div>
+        <div className="searchbox">
+            <input type="text" class='icon' placeholder="Search Something..." autoFocus='autoFocus' />
+        </div>
+        <div class="buttons">
+            <button>Home</button>
+            <button>Stores</button>
+            <button>Deals</button>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Hi John,
+                <br>
+                <span class="caret">
+                    &#9660;
+                </span>
+                My Account
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Profile</a>
+                <a href="#">Orders</a>
+                <a href="#">Wishlist</a>
+                <a href="#">Settings</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class='left'>
+            <div class="process">
+                <button>
+                    <p>1</p>Address
+                </button>
+                <button>
+                    <p>2</p>Delivery
+                </button>
+                <button>
+                    <p>3</p>Payment
+                </button>
+                <button>
+                    <p>4</p>Order Confirm
+                </button>
+            </div>
+            <div class="payment-header">
+                <h4>Payment Details</h4>
+            </div>
+            <div class="payment">
+                <div>
+                    <p>Contact</p>
+                    <p>john.doe@mail.com</p>
+                    <p>Change</p>
+                </div>
+                <div>
+                    <p>Ship to</p>
+                    <p>3986 Walnut Hill Drive, Cincinnati, Ohio 513-219-6650</p>
+                    <p>Change</p>
+                </div>
+                <div>
+                    <p>Method</p>
+                    <p>Standart</p>
+                    <p>Change</p>
+                </div>
+            </div>
+            <div class="secure-payment">
+                <h4>Secure Payment</h4>
+                <div class="form">
+                    <fieldset class="radios">
+                        <div>
+                            <div>
+                                <input type="radio" name="payment" checked value="Credit Card" id="visa" />
+                                <label for="visa">Credit Card
+                                </label>
+                            </div>
+                            <img src="assets/creditcard.jpg" alt="visa" />
+                        </div>
+                        <section>
+                            <fieldset>
+                                <legend>Card Number</legend>
+                                <input type="text" name="cardnumber"
+                                    placeholder=" _ _ _ _  _ _ _ _  _ _ _ _  _ _ _ _" />
+                            </fieldset>
+                            <fieldset>
+                                <legend>Card Owner</legend>
+                                <input type="text" name="card owner" />
+                            </fieldset>
+                            <fieldset>
+                                <legend>CVV</legend>
+                                <input type="text" name="cvv" placeholder="_ _ _" />
+                            </fieldset>
+                            <fieldset>
+                                <legend>Expiration</legend>
+                                <input type="text" name="expiration" placeholder="_ _  / _ _" />
+                            </fieldset>
+                        </section>
+                        <div>
+                            <div>
+                                <input type="radio" name="paypal" value="Paypal" id="Paypal">
+                                <label for=" Paypal">Paypal
+                                </label>
+                            </div>
+                            <img src="assets/paypal.jpg" alt="visa" />
+                        </div>
+                        <div>
+                            <div>
+                                <input type="radio" name="stripe" value="stripe" id="stripe" />
+                                <label for="stripe">Stripe
+                                </label>
+                            </div>
+                            <img src="assets/stripe.jpg" alt="visa" />
+                        </div>
+                    </fieldset>
+                    <div>
+                        <input type="checkbox" value="Pay" />
+                        <label for="pay">By clicking Place Order, I accept the
+                            <a href="#">License Agreement,</a>
+                            <a href="#"> Auto-Renewal Policy</a> and
+                            <a href="#">Privacy Notice</a>.
+                        </label>
+                    </div>
+                </div>
+                <button>PLACE HOLDER</button>
+            </div>
+        </section>
+        <section class='right'>
+            <div class='your-card'>
+                <h6>YOUR CART</h6>
+                <div>
+                    <div>
+                        <p>Image</p>
+                    </div>
+                    <div>
+                        <p>Toothpaste</p>
+                        <p>Cooling Spearmint Eucalyptus</p>
+                    </div>
+                    <div>
+                        <p>$16.68</p>
+                    </div>
+                </div>
+            </div>
+            <div class='order-summary'>
+                <h4>Order Summary</h4>
+                <div>
+                    <div>
+                        <p>Items:</p>
+                        <p>$16.68</p>
+                    </div>
+                    <div>
+                        <p>Shipping:</p>
+                        <p>$4.32</p>
+                    </div>
+                    <div>
+                        <p>Taxes:</p>
+                        <p>$1.00</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <p>Total</p>
+                        <p>$19.94</p>
+                    </div>
+                </div>
+            </div>
+            <div class='help'>
+                <h6>NEED HELP ?</h6>
+                <p>Delivery</p>
+                <p>Return & Refund</p>
+                <p>Ordering & Payment</p>
+                <p>Promotions & Vouchers</p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

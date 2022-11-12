@@ -1,0 +1,45 @@
+body {
+    background-color: #a6e4d1;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns:auto min-content;
+    justify-content: center;
+    justify-items: left;
+    margin-top: 5vh;
+    align-items: center;
+    grid-gap: 20px;
+    font: 2rem sans-serif;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    pointer-events: none;
+}
+
+input {
+    text-align: center;
+    margin: none;
+    border-radius: 8px;
+    outline: none;
+    -webkit-appearance: none;
+}
+
+#volume {
+    accent-color:rgb(13, 100, 158);
+}
+
+#bass {
+    accent-color:rgb(245, 10, 10);
+}
+
+#treble {
+    accent-color:rgb(221, 184, 20);
+    transition:  450ms ease-in;
+}
