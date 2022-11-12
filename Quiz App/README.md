@@ -1,8 +1,6 @@
 # This is a Quiz App by pure Javascript
----
-[ LIVE  Demo](https://practical-poincare-351188.netlify.app/)
 
-## Below you will see the page of a game
+## Below you will see the page of a app
 
 ![alt text](https://github.com/barisdevjs/Js-Projects/blob/main/Quiz%20App/screenshot1.jpg)
 

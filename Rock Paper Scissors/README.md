@@ -7,10 +7,6 @@
 
 ---
 
-- You can control volume , bass, treble
-- You can open a music from cellphone and listen simultaneously with Laptop/ PC
-- You can use your PC like a speaker
----
 
 
  
