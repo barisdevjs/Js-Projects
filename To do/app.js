@@ -13,8 +13,10 @@ document.addEventListener('DOMContentLoaded', function() {
         checkbox.addEventListener('change', () => {
           if (checkbox.checked) {
             newTodo.classList.add('done');
+            label.classList.add('done'); 
           } else {
             newTodo.classList.remove('done');
+            label.classList.remove('done'); 
           }
         });
       
