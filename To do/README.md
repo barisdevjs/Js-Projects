@@ -13,8 +13,7 @@
 ---
 
 - Build by `JS`, `CSS3` and `HTML`
-- When you answer correctly, your background and answer will turn green.
 ---
 
-### This game logic is build by the help of `functions `
+### This app logic is build by the help of `functions `
  
