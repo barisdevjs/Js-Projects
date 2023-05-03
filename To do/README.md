@@ -2,7 +2,12 @@
 
 ## Below you will see the page of a app
 
-![alt text](https://github.com/barisdevjs/Js-Projects/blob/main/Quiz%20App/screenshot1.jpg)
+![alt text](https://github.com/barisdevjs/Js-Projects/blob/main/To%20do/screenshots/p1.jpg)
+
+![alt text](https://github.com/barisdevjs/Js-Projects/blob/main/To%20do/screenshots/p2.jpg)
+
+![alt text](https://github.com/barisdevjs/Js-Projects/blob/main/To%20do/screenshots/p3.jpg)
+
 
 
 ---
