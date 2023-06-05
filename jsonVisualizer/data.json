@@ -1,0 +1,70 @@
+{
+    "Space": [
+        {
+            "Order": 1,
+            "Header": "Group1",
+            "Tiles": [
+                {
+                    "Order": 1,
+                    "Name": "Box1",
+                    "Width": 200,
+                    "Height": 100
+                },
+                {
+                    "Order": 2,
+                    "Name": "Box2",
+                    "Width": 100,
+                    "Height": 200
+                },
+                {
+                    "Order": 3,
+                    "Name": "Box3",
+                    "Width": 100,
+                    "Height": 100
+                },
+                {
+                    "Order": 4,
+                    "Name": "Box4",
+                    "Width": 100,
+                    "Height": 300
+                }
+            ]
+        },
+        {
+            "Order": 2,
+            "Header": "Group2",
+            "Tiles": [
+                {
+                    "Order": 1,
+                    "Name": "Til1",
+                    "Width": 100,
+                    "Height": 100
+                },
+                {
+                    "Order": 2,
+                    "Name": "Til2",
+                    "Width": 100,
+                    "Height": 200
+                },
+                {
+                    "Order": 3,
+                    "Name": "Til3",
+                    "Width": 100,
+                    "Height": 200
+                },
+                {
+                    "Order": 4,
+                    "Name": "Til4",
+                    "Width": 100,
+                    "Height": 100
+                },
+                {
+                    "Order": 5,
+                    "Name": "Til5",
+                    "Width": 100,
+                    "Height": 300
+                }
+            ]
+        }
+    ]
+}

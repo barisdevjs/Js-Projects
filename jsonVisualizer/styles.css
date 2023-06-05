@@ -1,0 +1,76 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:calc(100dvw-2rem);
+    margin-inline:auto ;
+    border: 1px solid #ccc;
+    margin: 3rem 2rem;
+}
+
+h1 {
+    margin:1rem ;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 60%;
+    padding: 1rem;
+    flex-wrap: wrap;
+    column-gap:4rem;
+    row-gap: 2rem;
+}
+
+#container > div {
+    border: 1px solid green;
+    padding:1rem;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-block: 3rem;
+}
+
+.grid1 {
+    display: grid;
+    grid-template-areas: 
+    "A A D"
+    "B C D"
+    "B . D";
+    grid-template-rows: repeat(3, minmax(100px, 1fr));
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+} 
+
+
+.grid2 {
+    display: grid;
+    grid-template-areas: 
+    "A C E"
+    "B C E"
+    "B D E";
+    grid-template-rows: repeat(3, minmax(100px, 1fr));
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+} 
+
+.tile {
+    position: relative;
+}
+
+.tile > p {
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+}
