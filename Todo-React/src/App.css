@@ -1,0 +1,15 @@
+.App {
+ display: flex;
+ flex-direction: column;
+ padding: 0 0 2rem 0;
+ gap: 1rem;
+}
+
+
+.itemLister {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 2rem;
+ flex-wrap: wrap;
+}

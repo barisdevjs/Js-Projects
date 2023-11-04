@@ -1,0 +1,52 @@
+{
+  "items": [
+    {
+      "id": "60f9d8b509c9e35b51c0d5d0",
+      "title": "Item 1",
+      "description": "Desc. item 1",
+      "is_completed": false,
+      "created_at": "2023-11-04T12:00:00Z",
+      "updated_at": "2023-11-04T12:00:00Z"
+    },
+    {
+      "id": "60f9d8b509c9e35b51c0d5d1",
+      "title": "Item 2",
+      "description": "Desc. item 2",
+      "is_completed": false,
+      "created_at": "2023-11-04T12:30:00Z",
+      "updated_at": "2023-11-04T13:45:00Z"
+    },
+    {
+      "id": "60f9d8b509c9e35b51c0d5d2",
+      "title": "Item 3",
+      "description": "Desc. item 3",
+      "is_completed": false,
+      "created_at": "2023-11-04T14:20:00Z",
+      "updated_at": "2023-11-04T15:10:00Z"
+    },
+    {
+      "id": "60f9d8b509c9e35b51c0d5d3",
+      "title": "Item 4",
+      "description": "Desc. item 4",
+      "is_completed": false,
+      "created_at": "2023-11-04T16:05:00Z",
+      "updated_at": "2023-11-04T17:30:00Z"
+    },
+    {
+      "id": "60f9d8b509c9e35b51c0d5d6",
+      "title": "Item 7",
+      "description": "Desc. item 7",
+      "is_completed": false,
+      "created_at": "2023-11-04T22:10:00Z",
+      "updated_at": "2023-11-04T23:05:00Z"
+    },
+    {
+      "id": "60f9d8b509c9e35b51c0d5d7",
+      "title": "Item 8",
+      "description": "Desc. item 8",
+      "is_completed": false,
+      "created_at": "2023-11-05T00:00:00Z",
+      "updated_at": "2023-11-05T01:15:00Z"
+    }
+  ]
+}
