@@ -6,8 +6,8 @@ This template provides a minimal setup to get React working in Vite with HMR and
 ********** STARTING ***********
 - Clone the repo 
 - run `npm i` for dependencies
-- first `npm run server` for server
-- second `npm run dev` for FE
+- first `npm run server` for server at one terminal
+- second `npm run dev` for FE at another terminal
 - You are good to go.
 
 ********** Used Technologies ***********
