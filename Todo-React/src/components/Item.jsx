@@ -5,13 +5,13 @@ import Form from 'react-bootstrap/Form';
 import { formatReadableDate } from '../utils';
 import Button from 'react-bootstrap/esm/Button';
 import { deleteItem, updateItem } from '../services';
-import { useShoppingCart } from '../ContextProvider';
+import { useTasks } from '../ContextProvider';
 
 function Item({ item }) {
   const {
     fireEvent,
     setFireEvent,
-  } = useShoppingCart();
+  } = useTasks();
   return (
     <Card >
       <Card.Body>
@@ -25,7 +25,7 @@ function Item({ item }) {
                 id="custom-switch"
                 checked={item.is_completed}
                 label={item.is_completed ? "Completed" : "To Do"}
-                onChange={() => updateItem(item)}
+                onChange={() => { updateItem(item); setFireEvent(!fireEvent) }}
               />
             </Form>
           </ListGroup.Item>
@@ -38,7 +38,8 @@ function Item({ item }) {
             <p>{formatReadableDate(item.updated_at)}</p>
           </ListGroup.Item>
         </ListGroup>
-        <Button onClick={() => { deleteItem(item.id); setFireEvent(!fireEvent) }} size="sm" variant="outline-danger">DELETE</Button>
+        <Button onClick={() => { deleteItem(item.id); setFireEvent(!fireEvent) }}
+          size="sm" variant="outline-danger">DELETE</Button>
       </Card.Body>
     </Card>
   );

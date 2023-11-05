@@ -2,15 +2,20 @@
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+********** STARTING ***********
+- Clone the repo 
+- run `npm i` for dependencies
+- first `npm run server` for server
+- second `npm run dev` for FE
+- You are good to go.
 
+********** Used Technologies ***********
+- Yup , Formik
+- React Bootstrap
+- React Hooks used for state management
+- uuid for unique ids
+- json server behaves like a real server because I added 300ms delay for responses
 
-    "id": "60f9d8b509c9e35b51c0d5d1",
-    "title": "Item 2",
-    "description": "Random description for item 2",
-    "is_completed": true,
-    "created_at": "2023-11-04T12:30:00Z",
-    "updated_at": "2023-11-04T13:45:00Z"
+REPO adress 
+https://github.com/barisdevjs/Js-Projects/tree/main/Todo-React

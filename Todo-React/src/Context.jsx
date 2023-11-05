@@ -1,16 +1,19 @@
 /* eslint-disable react/prop-types */
 import { createContext, useState } from 'react';
-export const ShoppingCartContext = createContext({});
-export function ShoppingCartProvider({ children }) {
+export const TaskContext = createContext({});
+export function TaskProvider({ children }) {
 	const [items, setItems] = useState([]);
+	const [filter, setFilter] = useState(false);
 	const [fireEvent, setFireEvent] = useState(false);
 	const [loading, setLoading] = useState(false);
 
 	return (
-		<ShoppingCartContext.Provider
+		<TaskContext.Provider
 			value={{
 				items,
 				setItems,
+				filter,
+				setFilter,
 				fireEvent,
 				setFireEvent,
 				loading,
@@ -18,6 +21,6 @@ export function ShoppingCartProvider({ children }) {
 			}}
 		>
 			{children}
-		</ShoppingCartContext.Provider>
+		</TaskContext.Provider>
 	);
 }

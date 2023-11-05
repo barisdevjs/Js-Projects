@@ -1,6 +1,6 @@
 import  { useContext } from 'react';
-import { ShoppingCartContext } from './Context';
+import { TaskContext } from './Context';
 
-export function useShoppingCart() {
-  return useContext(ShoppingCartContext);
+export function useTasks() {
+  return useContext(TaskContext);
 }

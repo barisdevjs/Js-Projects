@@ -1,12 +1,18 @@
 /* eslint-disable react/prop-types */
 import { useEffect } from 'react';
-import { useShoppingCart } from '../ContextProvider';
+import { useTasks } from '../ContextProvider';
 import { getItems } from '../services';
 import Item from './Item';
+import SpinnerComponent from './Spinner';
 
 function ItemsLister() {
-  const {
-    items,setItems,loading,setLoading } = useShoppingCart();
+  const { 				
+    items,
+    setItems,
+    fireEvent,
+    loading,
+    setLoading,
+    filter } = useTasks();
 
   useEffect(() => {
     const fetchData = async () => {
@@ -21,16 +27,22 @@ function ItemsLister() {
       }
     };
     fetchData();
-  }, []);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [fireEvent]);
+
 
   return (
     <div className='itemLister'>
-      {!loading && items.map((item) => (
-        <Item key={item.id} item={item} />
-      ))}
-      {loading && <p>Loading...</p>}
+      {!loading &&
+        items
+          .filter(item => (filter ? !item.is_completed : true))
+          .map((item) => (
+            <Item key={item.id} item={item} />
+          ))}
+      {loading && <SpinnerComponent />}
     </div>
   );
+  
 }
 
 export default ItemsLister;
