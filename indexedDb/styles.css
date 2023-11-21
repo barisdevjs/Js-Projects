@@ -1,0 +1,43 @@
+html {
+ font-family: sans-serif;
+}
+
+body {
+ margin: 0 auto;
+ max-width: 800px;
+}
+
+header, footer {
+ background-color: blue;
+ color: white;
+ padding: 0 20px;
+}
+
+.add, .view {
+ padding: 30px;
+ width: 40%;
+}
+
+.add {
+ background: #ebe6e6; 
+}
+section {
+ padding: 10px;
+ background: #3182d4;
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: center;
+}
+
+h1 {
+ margin: 0;
+}
+
+ol {
+ list-style-type: none;
+}
+
+div {
+ margin-bottom: 10px;
+}
